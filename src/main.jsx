@@ -1,10 +1,10 @@
-import { createRoot } from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 import "./index.css";
-import App from "./App.jsx";
-import Test from "./components/Test.jsx";
-createRoot(document.getElementById("root")).render(<App />);
 
-//React creates virtual DOM
-//Physical root
-//Virtual root
-//Reactjs updates virtual root, which automatically updated physical root
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
