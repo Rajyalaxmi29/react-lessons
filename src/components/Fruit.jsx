@@ -19,7 +19,8 @@ export default function Fruit() {
               padding: '10px',
               borderRadius: '8px',
               width: '120px',
-              textAlign: 'center'
+              textAlign: 'center',
+             backgroundColor:'pink'
             }}
           >
             <h4>{product.name}</h4>
