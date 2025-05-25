@@ -5,7 +5,7 @@ export default function Fruit() {
     { id: 1, name: "apple", price: 23 },
     { id: 2, name: "mango", price: 30 },
     { id: 3, name: "orange", price: 45 },
-     { id: 3, name: "banana", price: 45 },
+     { id: 4, name: "banana", price: 45 },
   ];
   return (
     <div>
