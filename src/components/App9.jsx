@@ -11,13 +11,13 @@ export default function App9() {
     setCount((prevCount) => prevCount - 1);
   };
   return (
-    <div>
+    <div> 
       <h1>App9</h1>
-
+    <div style={{display:"flex",textAlign:"center",alignItems:"center",gap:"10px"}}>
         <button onClick={increment}>+</button>
         <h3>{count}</h3>
         <button onClick={decrement}>-</button>
-     
+     </div>
     </div>
   );
 }
