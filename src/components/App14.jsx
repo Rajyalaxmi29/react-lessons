@@ -3,7 +3,7 @@ import axios from "axios";
 
 export default function App14() {
   const [users, setUsers] = useState([]);
-  const [searchTerm, setSearchTerm] = useState(""); // Step 1: Add search state
+  const [searchTerm, setSearchTerm] = useState("");
 
   const fetchData = async () => {
     const url = "https://jsonplaceholder.typicode.com/users";
@@ -15,7 +15,7 @@ export default function App14() {
     fetchData();
   }, []);
 
-  // Step 3: Filter users based on search term (case-insensitive)
+
   const filteredUsers = users.filter((user) =>
     user.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
