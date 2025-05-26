@@ -29,7 +29,7 @@ export default function App14() {
           type="text"
           placeholder="Search name"
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)} // Step 2: Update state
+          onChange={(e) => setSearchTerm(e.target.value)} 
         />
       </p>
       <ol>
