@@ -39,7 +39,7 @@ export default function App15() {
       
       <button onClick={handleAdd}>Submit</button>
 <br/>
-{sum}
+Result:{sum}
       </p>
       <hr/>
       <p>
