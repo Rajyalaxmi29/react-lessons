@@ -1,67 +1,47 @@
-import React, { useState, useEffect } from 'react';
-
+import React, { use } from "react";
+import { useEffect, useState } from "react";
+import "./App13.css"
 export default function App13() {
-  const [input, setInput] = useState(0);
-  const [results, setResults] = useState({
-    add: 0,
-    sub: 0,
-    mul: 0,
-    div: 0,
-  });
-
+  const [num, setNum] = useState(0);
+  const [result1, setResult1] = useState(0);
+  const [result2, setResult2] = useState(0);
+  const [result3, setResult3] = useState(0);
+  const [result4, setResult4] = useState(0);
   useEffect(() => {
-    const num = Number(input);
-    setResults({
-      add: 100 + num,
-      sub: 100 - num,
-      mul: 100 * num,
-      div: num !== 0 ? (100 / num).toFixed(2) : '∞',
-    });
-  }, [input]);
-
+    setResult1(100 + num);
+    setResult2(100 - num);
+    setResult3(100 * num);
+    setResult4(100 / num);
+  }, [num]);
   return (
-    <div style={{ textAlign: 'center', fontFamily: 'Arial' }}>
+    <div>
       <h1>App13</h1>
       <h2>Assignment</h2>
-
-      <div style={{ marginBottom: '20px' }}>
-        <input
-          type="number"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          style={{ fontSize: '20px', padding: '5px', width: '100px' }}
-        />
-      </div>
-
-      <div style={{ display: 'flex', justifyContent: 'center', gap: '40px', flexWrap: 'wrap' }}>
-        <div style={boxStyle}>
-          <h3>Addition</h3>
-          <p>100 + {input} = <strong>{results.add}</strong></p>
+      <div>
+        <div className="App13-Row">
+          <div>
+            <h4>Addition</h4>
+            100+{num}={result1}
+          </div>
+          <div>
+            <h4>Subtraction</h4>
+            100-{num}={result2}
+          </div>
         </div>
-
-        <div style={boxStyle}>
-          <h3>Subtraction</h3>
-          <p>100 - {input} = <strong>{results.sub}</strong></p>
-        </div>
-
-        <div style={boxStyle}>
-          <h3>Multiplication</h3>
-          <p>100 × {input} = <strong>{results.mul}</strong></p>
-        </div>
-
-        <div style={boxStyle}>
-          <h3>Division</h3>
-          <p>100 ÷ {input || '0'} = <strong>{results.div}</strong></p>
+        <p>
+          <input type="number" onChange={(e)=>setNum(e.target.value)} />
+        </p>
+        <div className="App13-Row">
+          <div>
+            <h4>Multiplication</h4>
+            100x{num}={result3}
+          </div>
+          <div>
+            <h4>Division</h4>
+            100/{num}={result4}
+          </div>
         </div>
       </div>
     </div>
   );
 }
-
-const boxStyle = {
-  border: '2px solid black',
-  padding: '20px',
-  width: '200px',
-  textAlign: 'center',
-  margin: '10px',
-};
