@@ -16,6 +16,8 @@ import App12 from "./components/App12";
 import App13 from "./components/App13";
 import App14 from "./components/App14";
 import App15 from "./components/App15";
+import App16 from "./components/App16";
+import App17 from "./components/App17";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -24,23 +26,25 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-     <Routes>
-  <Route path="/" element={<App1 />} />
-  <Route path="/app2" element={<App2 />} />
-  <Route path="/app3" element={<App3 />} />
-    <Route path="/app4" element={<App4 />} />
-      <Route path="/app5" element={<App5 />} />
-      <Route path="/app6" element={<App6 />} />
-  <Route path="/app7" element={<App7 />} />
-  <Route path="/app8" element={<App8 />} />
-   <Route path="/app9" element={<App9 />} />
-    <Route path="/app10" element={<App10 />} />
+      <Routes>
+        <Route path="/" element={<App1 />} />
+        <Route path="/app2" element={<App2 />} />
+        <Route path="/app3" element={<App3 />} />
+        <Route path="/app4" element={<App4 />} />
+        <Route path="/app5" element={<App5 />} />
+        <Route path="/app6" element={<App6 />} />
+        <Route path="/app7" element={<App7 />} />
+        <Route path="/app8" element={<App8 />} />
+        <Route path="/app9" element={<App9 />} />
+        <Route path="/app10" element={<App10 />} />
         <Route path="/app11" element={<App11 />} />
-            <Route path="/app12" element={<App12 />} />
-     <Route path="/app13" element={<App13 />} />
-      <Route path="/app14" element={<App14 />} />
-        <Route path="/app15" element={<App15 />} />         
-</Routes>
+        <Route path="/app12" element={<App12 />} />
+        <Route path="/app13" element={<App13 />} />
+        <Route path="/app14" element={<App14 />} />
+        <Route path="/app15" element={<App15 />} />
+        <Route path="/app16" element={<App16 />} />
+        <Route path="/app17" element={<App17 />} />
+      </Routes>
 
       <Footer />
     </BrowserRouter>
