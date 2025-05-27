@@ -20,6 +20,7 @@ import App16 from "./components/App16";
 import App17 from "./components/App17";
 import App18 from "./components/App18";
 import App19 from "./components/App19";
+import App20 from "./components/App20";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -48,6 +49,7 @@ function App() {
         <Route path="/app17" element={<App17 />} />
         <Route path="/app18" element={<App18 />} />
           <Route path="/app19" element={<App19 />} />
+        <Route path="/app20" element={<App20 />} />
       </Routes>
 
       <Footer />
