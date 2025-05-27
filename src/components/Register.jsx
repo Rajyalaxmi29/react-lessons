@@ -26,7 +26,7 @@ export default function Register() {
 
   return (
     <div style={styles.box}>
-      <h3>Register.jsx</h3>
+      <h3>Register page</h3>
       <input
         type="text"
         placeholder="Name"

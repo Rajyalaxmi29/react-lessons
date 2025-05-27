@@ -18,7 +18,7 @@ export default function Login() {
 
   return (
     <div style={styles.box}>
-      <h3>Login.jsx</h3>
+      <h3>Login page</h3>
       <input
         type="email"
         placeholder="Email"
