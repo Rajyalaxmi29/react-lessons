@@ -10,7 +10,7 @@ export default function App21() {
   return (
     <UserContext.Provider value={{ users, setUsers, setMessage }}>
       <div style={styles.container}>
-        <h1>App21 - Register/Login Example</h1>
+        <h1>App21 - Register/Login pages</h1>
         <div style={styles.forms}>
           <Register />
           <Login />
