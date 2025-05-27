@@ -47,7 +47,7 @@ function Register() {
 
   return (
     <div style={styles.box}>
-      <h3>Register.jsx</h3>
+      <h3>Register form</h3>
       <input
         type="text"
         placeholder="Name"
@@ -92,7 +92,7 @@ function Login() {
 
   return (
     <div style={styles.box}>
-      <h3>Login.jsx</h3>
+      <h3>Login form</h3>
       <input
         type="email"
         placeholder="Email"
